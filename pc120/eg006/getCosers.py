@@ -44,7 +44,6 @@ def get_list(url):
     return all_list
 
 
-
 def get_detial(url):
     # 获得详情页数据
     res = requests.get(url=url, headers=headers)
