@@ -16,8 +16,8 @@ headers = {
 }
 
 
+# 爬取页列表
 def run(category, start, end):
-    # 爬取页列表
     wait_url = [
         f'http://www.cosplay8.com/pic/chinacos/list_{category}_{i}.html' for i in range
         (int(start), int(end) + 1)
