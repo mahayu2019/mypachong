@@ -35,8 +35,8 @@ def run(category, start, end):
         get_detial(f'http://www.cosplay8.com{url}')
 
 
+# 获取全部详情页连接
 def get_list(url):
-    # 获取全部详情页连接
     all_list = []
     res = requests.get(url, headers=headers)
     html = res.text
