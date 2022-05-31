@@ -10,7 +10,7 @@ http://www.ttrcw.com.cn/job?jobarea1=33102301
 import requests
 import parsel
 
-urls = ['http://www.ttrcw.com.cn/job?jobarea1=33102301&page={}'.format(i) for i in range(7)]
+urls = ['http://www.ttrcw.com.cn/job?page={}'.format(i) for i in range(106)]
 
 for url in urls:
     response = requests.get(url)
